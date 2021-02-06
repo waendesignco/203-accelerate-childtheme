@@ -13,6 +13,8 @@ Text Domain:  accelerate-theme-child
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 ver rgba (0, 0, 0, 0);
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #masthead {
@@ -134,8 +136,19 @@ input#nf-field-4.ninja-forms-field.nf-element {
   float: right;
   width: 200px;
 }
+/* About single page */
+ .about h6 {
+   width: 80%;
+ }
 
-/* About */
+ .service-images {
+   float: left;
+   width: 30%;
+   height: 30%;
+   margin: 2em;
+ }
+
+/* About archive*/
 #about-content {
   width: 60%;
 }
@@ -189,6 +202,7 @@ font-weight: 500;
   border-bottom: 1px solid #bfbfbf;
   display: flex;
   justify-content: center;
+  width: 70%;
 }
 
 .interested {

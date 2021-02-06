@@ -39,7 +39,10 @@ get_header(); ?>
  </div><!-- #primary -->
 
  <nav id="navigation" class="container">
- 	<div class="center"><h5>Interested in working with us?</h5><a href="<?php echo site_url('/contact/') ?>">&larr; <span>Contact Us</span></a></div>
+ 	  <div class="center">
+			<h5>Interested in working with us?</h5>
+	    <a class="button" href="<?php echo site_url('/contact/') ?>">Contact Us</a>
+    </div>
  </nav>
 
 <?php get_footer(); ?>

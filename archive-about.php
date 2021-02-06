@@ -60,9 +60,9 @@ get_header(); ?>
   	<?php wp_reset_query(); //resets the altered query back to the original ?>
   </div>
 
-	<div>
-		<span class="line"></span>
-	</div>
+  <div>
+    <span class="line"></span>
+  </div>
 
   <div class="interested">
 		<div id="interested">
