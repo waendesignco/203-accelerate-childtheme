@@ -27,14 +27,16 @@ get_header(); ?>
 		<h6>We take pride in our clients and the content we create for them.<br>Here’s a brief overview of our offered services.</h6>
 	</div>
 
-	<div class="our service">
+	<div class="our-services">
 	  <?php query_posts('posts_per_page=4&post_type=about'); ?>
 		 <?php while ( have_posts() ) : the_post();
 			$image = get_field("image");
 			$size = "medium";
 		 ?>
+  </div>
 
-		 <article class="individual-service">
+  <div>
+		 <article id="individual-service">
         <figure class="about-image">
          <?php if($image){
          echo wp_get_attachment_image($image,$size); }?>
@@ -43,18 +45,7 @@ get_header(); ?>
 				  <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				  <h6><?php the_content(); ?></h6>
 			  </aside>
-    </article>
-
-    <article>
-        <aside class="about-sidebar">
-          <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-          <h6><?php the_content(); ?></h6>
-        </aside>
-        <figure class="about-image">
-          <?php if($image){
-          echo wp_get_attachment_image($image,$size); }?>
-        </figure>
-          <?php endwhile; //end of the loop ?>
+         <?php endwhile; //end of the loop ?>
     </article>
 
   	<?php wp_reset_query(); //resets the altered query back to the original ?>
@@ -71,7 +62,6 @@ get_header(); ?>
 		<div id="interested-button">
 		  <a class="button" href="<?php echo site_url('/contact/') ?>">Contact Us</a>
 	  </div>
-	</div>
 </section>
 
 <?php get_footer(); ?>

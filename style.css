@@ -176,15 +176,19 @@ margin: 0;
 font-weight: 500;
 }
 
-.individual-service {
+#individual-service {
   padding: 2em 0;
-  display: inline-block;
+  display: flex;
+}
+
+#individual-service, article:nth-child(even) {
+  flex-flow: row-reverse;
 }
 
 .about-sidebar {
   float: left;
   width: 60%;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .about-sidebar h1 {
@@ -193,10 +197,10 @@ font-weight: 500;
 
 .about-image {
   float: left;
-  width: 30%;
-  height: 30%;
   margin: 2em;
+  display: flex;
 }
+
 
 .line {
   border-bottom: 1px solid #bfbfbf;
