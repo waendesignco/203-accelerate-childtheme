@@ -181,8 +181,8 @@ font-weight: 500;
   display: flex;
 }
 
-article, #individual-service:nth-child(even) {
-  flex-flow: row-reverse;
+#individual-service:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .about-sidebar {
