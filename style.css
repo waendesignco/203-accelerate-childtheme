@@ -181,7 +181,7 @@ font-weight: 500;
   display: flex;
 }
 
-#individual-service, article:nth-child(even) {
+article, #individual-service:nth-child(even) {
   flex-flow: row-reverse;
 }
 
@@ -199,14 +199,14 @@ font-weight: 500;
   float: left;
   margin: 2em;
   display: flex;
+  align-items: center;
 }
-
 
 .line {
   border-bottom: 1px solid #bfbfbf;
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 1117px;
 }
 
 .interested {
