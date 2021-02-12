@@ -26,13 +26,13 @@ ver rgba (0, 0, 0, 0);
 }
 
 /* blog post on homepage */
-.blog-post h4 {
+.blog-post h4, .twitter-feed h4 {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
   margin: 2em 0 .5em;
 }
-.blog-post h3 {
+.blog-post h3, {
 	font-size: 1.5em;
 }
 .read-more-link {
@@ -72,7 +72,7 @@ div#primary.site-content-sidebar {
 
 /* Featured work to home page */
 .site-content h4 {
-  text-align: center;
+  text-align: left;
 }
 
 .homepage-featured-work {
@@ -258,8 +258,13 @@ ver rgba (0, 0, 0, 0);
 /* media queries */
 @media (min-width: 768px){
   .blog-post {
-  	width: 50%;
+  	width: 45%;
   	float: left;
   	margin-bottom: 2em;
+  }
+  .twitter-feed {
+    width: 45%;
+    float: right;
+    margin-bottom: 2em;
   }
 }
