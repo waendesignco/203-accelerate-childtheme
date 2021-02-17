@@ -35,7 +35,7 @@ get_header(); ?>
 		 ?>
   </div>
 
-  <div>
+  <div class="wrapper">
 		 <article id="individual-service">
         <figure class="about-image">
          <?php if($image){
@@ -51,11 +51,11 @@ get_header(); ?>
   	<?php wp_reset_query(); //resets the altered query back to the original ?>
   </div>
 
-  <div>
-    <span class="line"></span>
-  </div>
 
   <div class="interested">
+    <div>
+      <span class="line"></span>
+    </div>
 		<div id="interested">
       <h4>Interested in working with us?</h4>
 	  </div>

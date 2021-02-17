@@ -167,6 +167,12 @@ input#nf-field-4.ninja-forms-field.nf-element {
   margin-right: 9em;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .services-content {
   text-align: center;
 }
@@ -179,9 +185,11 @@ font-weight: 500;
 #individual-service {
   padding: 2em 0;
   display: flex;
+  flex-flow: flex-direction flex-wrap;
 }
 
 #individual-service:nth-child(even) {
+  display: flex;
   flex-direction: row-reverse;
 }
 
@@ -202,17 +210,18 @@ font-weight: 500;
   align-items: center;
 }
 
-.line {
-  border-bottom: 1px solid #bfbfbf;
-  display: flex;
-  justify-content: center;
-  width: 1117px;
-}
-
 .interested {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.interested.line {
+  width: 100%;
+  border-top: : 1px solid #bfbfbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #interested {
