@@ -50,6 +50,7 @@ register_post_type( 'case_studies',
 	);
 
 }
+// Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
 
 // Add Twitter feed on homepage

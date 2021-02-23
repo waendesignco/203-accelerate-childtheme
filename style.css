@@ -160,37 +160,30 @@ input#nf-field-4.ninja-forms-field.nf-element {
   margin: auto;
 }
 
-.our-services {
-  display: inline-block;
-
-  margin-left: 9em;
-  margin-right: 9em;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .services-content {
   text-align: center;
 }
 
 .services-content h6 {
-margin: 0;
-font-weight: 500;
+  font-weight: 500;
 }
 
-#individual-service {
-  padding: 2em 0;
+.individual-services {
   display: flex;
-  flex-flow: flex-direction flex-wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 80%;
+  margin-left: 8em;
 }
 
-#individual-service:nth-child(even) {
-  display: flex;
+.individual-service:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.individual-service {
+  margin: 2em 0;
+  display: flex;
 }
 
 .about-sidebar {
@@ -205,7 +198,7 @@ font-weight: 500;
 
 .about-image {
   float: left;
-  margin: 2em;
+  margin: 3em;
   display: flex;
   align-items: center;
 }
